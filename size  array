@@ -1,0 +1,445 @@
+
+// ========================linear datatype  sort============================
+// Online C++ compiler to run C++ program online
+// ==================question 1================================
+// write a program to display values of an array
+// example-1 input:arr[2,1,4,3,5]
+//             output:-2,31,4,3,5
+// example-1 input:arr[]
+//             output:-no data
+//  solve:-
+// #include <iostream>
+// using namespace std;
+// class top{
+//     public:void show(int arr[],int s)
+//     {
+//         if(s==0)
+//         {
+//             cout<<"no data";
+//         }
+//         else{
+//             for (int i=0; i<s; ++i)
+//             {
+//                 if(i==s-1)
+//                 {
+//                     cout<<arr[i];
+//                 }
+//                 else
+//                 {
+//                     cout<<arr[i]<<",";
+//                 }
+//             }
+//         }
+//     }
+// };
+// int main()  //driver code
+// {
+//     int n;
+//     cout<<"enter size of array either 0 or more\n";
+//     cin>>n;
+//     int a[n];
+//     int s=sizeof(a)/sizeof(a[0]);
+//     cout<<"enter"<<n<<"values\n";
+//     for(int i=0; i<n; ++i){
+//         cin>>a[i];
+//     }
+//   cout<<"s="<<s<<"\n";
+//   top p;
+// p.show(a,s);
+// }
+// // ===========================bubble sort========================================
+// #include<iostream>
+// using namespace std;
+// class top
+// {
+//     int c=0;
+//     bool f=true;
+//     public: void bubble(int arr[],int s)
+//     {
+//         for(int i=0;i<s;i++)
+//         {
+//         for(int j=0;j<s-i-1;j++)
+//         {
+//             c++;
+//             if(arr[j]>arr[j+1])
+//             {
+//                 int tmp;
+//                 tmp=arr[j+1];
+//                 arr[j+1]=arr[j];
+//                 arr[j]=tmp;
+//                 f=false;
+//             }
+            
+                
+//             }
+//             if(f==true)
+//             {
+//                 break;
+//             }
+//     }
+//     cout<<"\ncounter hit="<<c;
+//     }
+// };
+// int main()
+// {
+//     top p;
+//     int a[]={5,4,3,2,1};
+//     int s=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<s;i++)
+//     {
+//         cout<<a[i]<<"\t";
+        
+//     }
+//     p.bubble(a,s);
+//     cout<<"\n after applying\n";
+//     for(int i=0;i<s;i++)
+//     {
+//         cout<<a[i]<<"\t";
+// }
+// question:1-=====================no.of swapping ==========================
+// #include<iostream>
+// using namespace std;
+// class top
+// {
+//     int c=0;
+//     bool f=true;
+//     public: void bubble(int arr[],int s)
+//     {
+//         for(int i=0;i<s;i++)
+//         {
+//         for(int j=0;j<s-i-1;j++)
+//         {
+//             c++;
+//             if(arr[j]>arr[j+1])
+//             {
+//                 int tmp;
+//                 tmp=arr[j+1];
+//                 arr[j+1]=arr[j];
+//                 arr[j]=tmp;
+//                 f=false;
+//             }
+            
+                
+//             }
+//             cout<<"count"<<c;
+//             if(f==true)
+//             {
+//                 break;
+//             }
+//     }
+    // cout<<"\ncounter hit="<<c;
+//     }
+// };
+// int main()
+// {
+//     top p;
+//     int a[]={5,4,3,2,1};
+//     int s=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<s;i++)
+//     {
+//         cout<<a[i]<<"\t";
+        
+//     }
+//     p.bubble(a,s);
+//     cout<<"\n after applying\n";
+//     for(int i=0;i<s;i++)
+//     {
+//         cout<<a[i]<<"\t";
+// }
+// }
+
+// ====================================insertion sort====================================
+// #include<iostream>
+// using namespace std;
+// class top
+// {
+//     int c=0;
+//     bool f=true;
+//     public: void insertsort(int arr[],int s)
+//     {
+//         for(int i=1;i<s;i++)
+//         {
+//             int chotu=i;
+           
+// while(chotu>=0 && arr[chotu]<arr[chotu-1]){
+//        int tmp;
+//                 tmp=arr[chotu-1];
+//                 arr[chotu-1]=arr[chotu];
+//                 arr[chotu]=tmp;
+//                 chotu--;
+           
+//     }
+//     }
+//     }
+// };
+
+// int main()
+// {
+//     top p;
+//     int a[]={5,4,2,1,3};
+//     int s=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<s;i++)
+//     {
+//         cout<<a[i]<<"\t";
+        
+//     }
+//     p.insertsort(a,s);
+//     cout<<"\n after applying\n";
+//     for(int i=0;i<s;i++)
+//     {
+//         cout<<a[i]<<"\t";
+// }
+// }
+// // ====================================selection sort========================================
+// #include<iostream>
+// using namespace std;
+// void select(int arr[],int s){
+//     for(int i=0;i<s;i++)
+// {
+//  int chotu=i;
+//  for(int j=i+1;j<s; j++){
+//      if(arr[chotu]>arr[j]){
+//          chotu=j;
+//      }
+//  }
+//  if(chotu!=i){
+//      int tmp;
+//      tmp=arr[i];
+//      arr[i]=arr[chotu];
+//      arr[chotu]=tmp;
+//  }
+// }
+// }
+// int main()
+// {
+//     int arr[]={4,1,5,3,2};
+//     int s=sizeof(arr)/sizeof(arr[0]);
+//     for (int i=0;i<s;i++)
+//     {
+//         cout<<arr[i]<<"\t";
+//     }
+//     cout<<"\n after applying\n"<<endl;
+//     select(arr,s);
+//     for(int i=0;i<s;i++)
+//     {
+//         cout<<arr[i]<<"\t";
+//     }
+// }
+// ===============================linear datatype  sort end============================================
+// Online C++ compiler to run C++ program online
+////============================= QUIK SORT ALGORITHM========================================
+// #include <iostream>
+// using namespace std;
+// int divide(int arr[],int low,int high){
+//     int pv=arr[low];
+//     int i=low+1;
+//     int j=high;
+//     do{
+//         while(arr[i]<pv){
+//             i++;
+//         }
+//         while(arr[j]>pv){
+//             j--;
+//         }
+//         if(i<j){
+//             int tmp; 
+//             tmp=arr[i];
+//             arr[i]=arr[j];
+//             arr[j]=tmp;
+//         }
+//     }
+//     while(i<j);
+//              int tmp; 
+//             tmp=arr[low];
+//             arr[low]=arr[j];
+//             arr[j]=tmp;
+//             return j;
+// }
+// void qksort(int arr[],int low,int high)
+// {
+//     int pv;
+//     if(low<high){
+//         pv=divide(arr,low,high);
+//         qksort(arr,low,pv-1);
+//         qksort(arr,pv+1,high);
+        
+//     }
+// }
+// int main() {
+//  int arr[]={9,2,1,5,6};
+//  int size=sizeof(arr)/sizeof(arr[0]);
+//  cout<<"\nBefore applying\n";
+//  for(int i=0; i<size; i++){
+//      cout<<arr[i]<<"\t";
+//  }
+//  qksort(arr,0,size-1);
+//  cout<<"\nAfter applying quik sort\n";
+//  for(int i=0; i<size; i++){
+//      cout<<arr[i]<<"\t";
+//     }
+// }
+
+// //========================merge sort=====================================
+// #include <iostream>
+// using namespace std;
+// void combine(int a[],int low ,int mid, int high){
+    
+//     int b[high+1];//temporary array to store sorted elements 
+//     int i,j;
+//     int k=low;
+//     i=low;
+//     j=mid+1;
+
+//     while(i<=mid && j<=high){
+        
+//         if(a[i]<a[j]){
+//             b[k]=a[i];
+//             i++;
+//             // k++;
+//         }else{
+//             b[k]=a[j];
+//             j++;
+//             // k++;
+//         }
+//         k++;
+//     }
+
+//     while(i<=mid){
+//         b[k]=a[i];
+//         i++;
+//         k++;
+//     }
+//     while(j<=high){
+//         b[k]=a[j];
+//         j++;
+//         k++;
+//     }
+
+//     for(int i=low; i<=high; ++i){
+//         a[i]=b[i];
+//     }
+// }
+// void merge(int a[] , int low,int high){
+//     int mid;
+//     if(low<high){//base case :
+//     //stop when low == high
+
+//     mid = (low+high)/2;//find the middle value of index
+//     merge(a,low,mid);//recursively sort left half
+//     merge(a,mid+1,high);//recursively sort right half
+//     combine(a,low,mid,high);//merge both halves
+
+//  }
+    
+// }
+// int main()
+// {
+//     int a[] = {5,1,7,2,8,6,3};
+//     int s =sizeof(a)/sizeof(a[0]);
+    
+//     cout<<"Before applying quick sort";
+//     for(int i=0; i<s; ++i){
+//         cout<<a[i]<<" ";
+//     }
+    
+//     merge(a,0,s-1);
+    
+//     cout<<"after applying quick sort";
+//     for(int i=0; i<s; ++i){
+//         cout<<a[i]<<",";}
+// }
+// // ====================================recursion========================================
+// # include<iostream> 
+// using namespace std;
+// void show (int a)
+// {
+    
+//     if(a==0)  //base codition
+//     {
+//         return;
+//     }
+// // show(a-1);   //tail recursion
+// cout<<a<<"\t"; ///recursion relationship
+// show(a-1);   //head recursion
+// }
+// int main()
+// {
+//     show(5);
+    
+// }
+// // =======================factorial with using recursion====================
+// # include<iostream> 
+// using namespace std;
+// int fact (int a)
+// {
+//     int r;
+//     if(a==1)  //base codition
+//     {
+//         return 1;
+//     }
+
+// r=a*fact(a-1);//recursion relationship
+// return r;
+// }
+// int main()
+// {
+//     cout<<fact(4);
+    
+// }
+
+
+// // ====================fibonacchi series===================================
+// # include <iostream>
+// using namespace std;
+// int fib(int a)
+// {
+//     if(a==0)
+//     {
+//         return 0;
+//     }
+//     if(a==1)
+//     {
+//         return 1;
+//     }
+//     return fib(a-1)+fib(a-2);
+// }
+// int main()
+// {
+//     int a;
+//     cout<<"enter the number";
+//     cin>>a;
+    
+//     cout<<fib(a);
+// }
+// // ==============create a program table ith using recurssion=========================
+// # include<iostream>
+// using namespace std;
+// void table(int n,int c=1)
+// {
+//     if(c>10)
+//     {
+//         return;
+//     }
+//     cout<<n*c<<"\t";
+//     table(n,c+1);
+// }
+// int main()
+// {
+//    int n;
+//    cout<<"enter the number";
+//    cin>>n;
+//    table(n);
+    
+// }
+
+//  ===================================question=========================
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int i=1,j=1,k=0;
+//     if(++k,j,i++)
+//     {
+//         cout<<i<<","<<j<<","<<k;
+//     }
+// }
