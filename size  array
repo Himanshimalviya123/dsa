@@ -462,3 +462,104 @@ int main()
   cout<<"size=";
   cout<<v[3];
 }
+// ===============================================================
+///second highest number
+
+#include <iostream>
+#include<array>
+using namespace std;
+#include<algorithm> //we use only for assending order data 
+int main()
+{
+    array<int,5>v{2,3,4,6,8};
+
+    sort(v.begin(),v.end());
+
+    for(auto k:v){
+        cout<<k; //data inaseending order;
+    }
+    cout<<v.size()<<endl;
+    cout<<v[3];
+    
+}
+
+
+
+#include <iostream>
+#include<array>
+using namespace std;
+#include<algorithm> //we use only for assending order data 
+int main()
+{
+    array<int,5>v{2,3,4,6,8};
+    array<double,3>v2{2.3,4.5,6.4};
+    for(int i=0; i<v.size(); ++i){
+        
+        cout<<v.at(i)<<endl;
+    }
+    
+    for(auto p:v2){
+        cout<<p<<endl;
+    }
+    
+    cout<<"front"<<v.front()<<endl;
+    cout<<"back"<<v.back()<<endl;
+    sort(v.begin(),v.end());
+    for(auto k:v){
+        cout<<k; //data inaseending order;
+    }
+}
+
+
+#include <iostream>
+#include<array>
+using namespace std;
+int main()
+{
+    array<int,5>v{2,3,4,6,8};
+    for(int i=0; i<v.size(); ++i){
+        
+        cout<<v.at(i)<<endl;
+    }
+    
+    for(int p:v){
+        cout<<p<<endl;
+    }
+}
+
+
+#include <iostream>
+#include<array>
+using namespace std;
+int main()
+{
+    array<int,5>v{2,3,4,6,8};
+    // for(int i=0; i<v.size(); ++i){
+        
+    //     // cout<<v.at(i)<<endl;
+    // }
+    
+    for(auto p:v){
+        cout<<p<<endl;
+    }
+}
+
+
+
+
+#include <iostream>
+#include<array>
+using namespace std;
+int main()
+{
+    array<int,5>v{2,3,4,6,8}; 
+    array<double,3>v2{2.3,4.5,6.4};
+    for(int i=0; i<v.size(); ++i){
+        
+        cout<<v.at(i)<<endl;
+    }
+    
+    for(auto p:v2){
+        cout<<p<<endl;
+    }
+}
