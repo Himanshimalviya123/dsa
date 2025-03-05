@@ -706,7 +706,7 @@ int main()
 }
 // ------------------------------------------------------------------------------
 // Online C++ compiler to run C++ program online
-// ===============================lambda expression=============================
+// =============================== lambda expression =============================
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -726,4 +726,41 @@ int main() {
     auto k=[](int a) {return a*a;};
     cout<<k(7);
 }
+// =================================================================================================================
+                                            // sum to two vector size are same 
+#include <iostream>
+using namespace std;
 
+#include <vector>
+
+int main() {
+    int n;
+  cout << "Enter the size of vectors: ";
+   cin >> n;
+
+   vector<int> v1(n);
+    vector<int> v2(n);
+
+   cout << "Enter the elements of vector V1: ";
+    for (int i = 0; i < n; i++) {
+    cin >> v1[i];
+    }
+
+ cout << "Enter the elements of vector V2: ";
+    for (int i = 0; i < n; i++) {
+      cin >> v2[i];
+    }
+
+vector<int> dp(n);
+
+    for (int i = 0; i < n; i++) {
+        dp[i] = v1[i] + v2[i];
+    }
+
+ cout << "Sum of vectors: ";
+    for (int i = 0; i < n; i++) {
+       cout << dp[i] << " ";
+    }
+
+    return 0;
+}
