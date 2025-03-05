@@ -730,37 +730,66 @@ int main() {
                                             // sum to two vector size are same 
 #include <iostream>
 using namespace std;
-
 #include <vector>
-
 int main() {
-    int n;
-  cout << "Enter the size of vectors: ";
-   cin >> n;
-
-   vector<int> v1(n);
-    vector<int> v2(n);
-
-   cout << "Enter the elements of vector V1: ";
-    for (int i = 0; i < n; i++) {
-    cin >> v1[i];
-    }
-
- cout << "Enter the elements of vector V2: ";
-    for (int i = 0; i < n; i++) {
-      cin >> v2[i];
-    }
-
+int n;
+cout << "Enter the size of vectors: ";
+cin >> n;
+vector<int> v1(n);
+vector<int> v2(n);
+cout << "Enter the elements of vector V1: ";
+for (int i = 0; i < n; i++) {
+cin >> v1[i];
+}
+cout << "Enter the elements of vector V2: ";
+for (int i = 0; i < n; i++) {
+cin >> v2[i];
+}
 vector<int> dp(n);
-
-    for (int i = 0; i < n; i++) {
-        dp[i] = v1[i] + v2[i];
-    }
-
- cout << "Sum of vectors: ";
-    for (int i = 0; i < n; i++) {
-       cout << dp[i] << " ";
-    }
-
-    return 0;
+for (int i = 0; i < n; i++) {
+dp[i] = v1[i] + v2[i];
+}
+cout << "Sum of vectors: ";
+for (int i = 0; i < n; i++) {
+cout << dp[i] << " ";
+}
+return 0;
+}
+// ================================================================================================================
+                                            // sum to two vector size are different 
+#include <iostream>
+using namespace std;
+// #include<algorithm>
+#include<vector>
+int main()
+{
+ int n,n1;
+ cout<<"enter the first size:";
+ cin>>n;
+ cout<<"enter the sec size:";
+ cin>>n1;
+ 
+ vector<int>v1(n);
+ vector<int>v2(n1);
+ 
+ cout<<"enter the v1 value :";
+ for(int i=0; i<n; i++){
+    cin >> v1[i]; 
+ }
+ 
+ cout<<"enter the v2 value :";
+ for(int i=0; i<n1; i++){
+    cin >> v2[i]; 
+ }
+ 
+ vector<int>v(n);
+ 
+ 
+ for(int i=0; i<=n; ++i){
+    v[i] = v1[i]+v2[i];
+ }
+ 
+ for(int i=0; i<=n; ++i){
+     cout<<v[i];
+}
 }
