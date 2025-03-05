@@ -705,4 +705,25 @@ int main()
     }
 }
 // ------------------------------------------------------------------------------
+// Online C++ compiler to run C++ program online
+// ===============================lambda expression=============================
+#include <iostream>
+using namespace std;
+#include <vector>
+#include <algorithm>
+int main() {
+   vector<int>v={4,1,3,2,7};
+   sort(v.begin(),v.end(),less<int>());
+   sort(v.begin(),v.end(),greater<int>());
+   sort(v.begin(),v.end(),[](int a,int b){return a>b;});
+   
+   for(auto p:v){
+       cout<<p<<"\t";
+   }
+   cout<<"\n";
+   cout<<[](int a){return a+10;}(5)<<"\n";
+    cout<<[](int a,int b){return a>b;}(20,3)<<"\n";
+    auto k=[](int a) {return a*a;};
+    cout<<k(7);
+}
 
