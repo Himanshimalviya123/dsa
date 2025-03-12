@@ -40,48 +40,49 @@ int main() {
 }
 
 // Online C++ compiler to run C++ program online
-#include <iostream>
-using namespace std;
-void sum (int a, int b)
-{
-   cout<<a+b;
-}
-int main() {
-    sum(3,4.3);
-}
+// #include <iostream>
+// using namespace std;
+// void sum (int a, int b)
+// {
+//    cout<<a+b;
+// }
+// int main()
+// {
+//     sum(3,4.3);
+// }
 
 // Online C++ compiler to run C++ program online
 //======================================template===============================
-#include <iostream>
-using namespace std;
-template <typename t1>//content place hadder
-t1 sum(t1 a,t1 b)
-{
-    return a+b;
-}
-int main()
-{
-   cout<<sum(2.3,2.3);                      //output=4.6
+// #include <iostream>
+// using namespace std;
+// template <typename t1>//content place hadder
+// t1 sum(t1 a,t1 b)
+// {
+//     return a+b;
+// }
+// int main()
+// {
+//    coutsum(2.3,2.3);                      //output=4.6
    
-}
+// }
 // Online C++ compiler to run C++ program online
 //=====================================template============================================
-#include <iostream>
-using namespace std;
-template <typename t1>
-t1 sum(t1 a,t1 b){
-    return a+b;
-}
-template <typename t1,typename t2>
-int multi(t1 x1,t2 x2){
-    return x1*x2;
-}
+// #include <iostream>
+// using namespace std;
+// template <typename t1>
+// t1 sum(t1 a,t1 b){
+//     return a+b;
+// }
+// template <typename t1,typename t2>
+// int multi(t1 x1,t2 x2){
+//     return x1*x2;
+// }
 
-int main() {
-    cout<<sum(4,5)<<"\n";
-    cout<<multi(4.3,3.4);                    //outpu-9
-                                              //14
-}
+// int main() {
+//     cout<<sum(4,5)<<"\n";
+//     cout<<multi(4.3,3.4);                    //outpu-9
+//                                               //14
+// }
 
 // Online C++ compiler to run C++ program online
 //=====================================template============================================
@@ -113,5 +114,65 @@ int main()
    cout<<obj.show('a')<<"\n";
    bhopal<int,int>bp(20,30);
    bp.show();
+
+}
+// Online C++ compiler to run C++ program online
+//====================================STACK======================================================================
+#include <iostream>
+using namespace std;
+#include<stack>
+int main() {
+    stack<int>st;
+    st.push(32);
+    st.push(22);
+    st.push(12);
+    st.push(42);
+    st.push(52); 
+    st.push(25);
+    while(!st.empty()){
+        cout<<st.top()<<"\t";
+        st.pop();
+    }
+}
+// Online C++ compiler to run C++ program online
+//====================================STACK======================================================================
+#include <iostream>
+using namespace std;
+#include<stack>
+int main() {
+    stack<int>st;
+    // st.push(32);
+    // st.push(22);
+    // st.push(12);
+    // st.push(42);
+    // st.push(52); 
+    // st.push(25);
+    // while(!st.empty()){
+    //     cout<<st.top()<<"\t";
+    //     st.pop();
+    // }
+    //user se input
+    int n,a;
+    cout<<"enter how many values\n";
+    cin>>n;
+    for(int i=1; i<=n;i++){
+        cout<<"enter value\n";
+        cin>>a;
+        st.push(a);
+        
+    }
+    // while(!st.empty()){
+    //     cout<<st.top()<<"\t";
+    //     st.pop();
+    // }
+    //====================smallest value==================================================================
+    int x=st.top();
+    while(!st.empty()){
+        if(x>=st.top()){//samalest value or x<=st.top() to highest value
+            x=st.top();
+        }
+        st.pop();
+    }
+    cout<<"result="<<x<<"\t";
 
 }
