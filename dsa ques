@@ -1,274 +1,277 @@
-// Online C++ compiler to run C++ program online
-#include <iostream>
-using namespace std;
-void sum (int a, int b)
-{
-   cout<<a+b;
-}
-void sum(double a,double b)
-{
-    cout<<a+b;
-}
-int main() {
-    sum(3.4,4.3);
-}
-
-// Online C++ compiler to run C++ program online
-#include <iostream>
-using namespace std;
-void sum (int a, int b)
-{
-   cout<<a+b;
-}
-void sum(float a,float b)
-{
-    cout<<a+b;
-}
-int main() {
-    sum(3.4,4.3);
-}
-
-// Online C++ compiler to run C++ program online
-#include <iostream>
-using namespace std;
-void sum (int a, int b)
-{
-   cout<<a+b;
-}
-int main() {
-    sum(3,4);
-}
-
-// Online C++ compiler to run C++ program online
+// // Online C++ compiler to run C++ program online
 // #include <iostream>
 // using namespace std;
 // void sum (int a, int b)
 // {
 //    cout<<a+b;
 // }
-// int main()
+// void sum(double a,double b)
 // {
-//     sum(3,4.3);
+//     cout<<a+b;
+// }
+// int main() {
+//     sum(3.4,4.3);
 // }
 
-// Online C++ compiler to run C++ program online
-//======================================template===============================
+// // Online C++ compiler to run C++ program online
 // #include <iostream>
 // using namespace std;
-// template <typename t1>//content place hadder
-// t1 sum(t1 a,t1 b)
+// void sum (int a, int b)
 // {
-//     return a+b;
+//    cout<<a+b;
 // }
-// int main()
+// void sum(float a,float b)
 // {
-//    coutsum(2.3,2.3);                      //output=4.6
+//     cout<<a+b;
+// }
+// int main() {
+//     sum(3.4,4.3);
+// }
+
+// // Online C++ compiler to run C++ program online
+// #include <iostream>
+// using namespace std;
+// void sum (int a, int b)
+// {
+//    cout<<a+b;
+// }
+// int main() {
+//     sum(3,4);
+// }
+
+// // Online C++ compiler to run C++ program online
+// // #include <iostream>
+// // using namespace std;
+// // void sum (int a, int b)
+// // {
+// //    cout<<a+b;
+// // }
+// // int main()
+// // {
+// //     sum(3,4.3);
+// // }
+
+// // Online C++ compiler to run C++ program online
+// //======================================template===============================
+// // #include <iostream>
+// // using namespace std;
+// // template <typename t1>//content place hadder
+// // t1 sum(t1 a,t1 b)
+// // {
+// //     return a+b;
+// // }
+// // int main()
+// // {
+// //    coutsum(2.3,2.3);                      //output=4.6
    
-// }
-// Online C++ compiler to run C++ program online
-//=====================================template============================================
+// // }
+// // Online C++ compiler to run C++ program online
+// //=====================================template============================================
+// // #include <iostream>
+// // using namespace std;
+// // template <typename t1>
+// // t1 sum(t1 a,t1 b){
+// //     return a+b;
+// // }
+// // template <typename t1,typename t2>
+// // int multi(t1 x1,t2 x2){
+// //     return x1*x2;
+// // }
+
+// // int main() {
+// //     cout<<sum(4,5)<<"\n";
+// //     cout<<multi(4.3,3.4);                    //outpu-9
+// //                                               //14
+// // }
+
+// // Online C++ compiler to run C++ program online
+// //=====================================template============================================
 // #include <iostream>
 // using namespace std;
 // template <typename t1>
-// t1 sum(t1 a,t1 b){
-//     return a+b;
-// }
+// class cybrom{
+//     public: t1 show(t1 a){
+//         return ++a;
+//     }
+// };
 // template <typename t1,typename t2>
-// int multi(t1 x1,t2 x2){
-//     return x1*x2;
-// }
+// class bhopal{
+//     t1 x1;
+//     t2 x2;
+//     public:bhopal(t1 a,t2 b){
+//         x1=a;
+//         x2=b;
+//     }
+//     void show(){
+//         cout<<"X1="<<x1<<"\n";
+//         cout<<"X2="<<x2<<"\n";
+//     }
+// };
 
+// int main() 
+// {
+//    cybrom<char>obj;
+//    cout<<obj.show('a')<<"\n";
+//    bhopal<int,int>bp(20,30);
+//    bp.show();
+
+// }
+// // Online C++ compiler to run C++ program online
+// //====================================STACK======================================================================
+// #include <iostream>
+// using namespace std;
+// #include<stack>
 // int main() {
-//     cout<<sum(4,5)<<"\n";
-//     cout<<multi(4.3,3.4);                    //outpu-9
-//                                               //14
+//     stack<int>st;
+//     st.push(32);
+//     st.push(22);
+//     st.push(12);
+//     st.push(42);
+//     st.push(52); 
+//     st.push(25);
+//     while(!st.empty()){
+//         cout<<st.top()<<"\t";
+//         st.pop();
+//     }
 // }
-
-// Online C++ compiler to run C++ program online
-//=====================================template============================================
-#include <iostream>
-using namespace std;
-template <typename t1>
-class cybrom{
-    public: t1 show(t1 a){
-        return ++a;
-    }
-};
-template <typename t1,typename t2>
-class bhopal{
-    t1 x1;
-    t2 x2;
-    public:bhopal(t1 a,t2 b){
-        x1=a;
-        x2=b;
-    }
-    void show(){
-        cout<<"X1="<<x1<<"\n";
-        cout<<"X2="<<x2<<"\n";
-    }
-};
-
-int main() 
-{
-   cybrom<char>obj;
-   cout<<obj.show('a')<<"\n";
-   bhopal<int,int>bp(20,30);
-   bp.show();
-
-}
-// Online C++ compiler to run C++ program online
-//====================================STACK======================================================================
-#include <iostream>
-using namespace std;
-#include<stack>
-int main() {
-    stack<int>st;
-    st.push(32);
-    st.push(22);
-    st.push(12);
-    st.push(42);
-    st.push(52); 
-    st.push(25);
-    while(!st.empty()){
-        cout<<st.top()<<"\t";
-        st.pop();
-    }
-}
-// Online C++ compiler to run C++ program online
-//====================================STACK======================================================================
-#include <iostream>
-using namespace std;
-#include<stack>
-int main() {
-    stack<int>st;
-    // st.push(32);
-    // st.push(22);
-    // st.push(12);
-    // st.push(42);
-    // st.push(52); 
-    // st.push(25);
-    // while(!st.empty()){
-    //     cout<<st.top()<<"\t";
-    //     st.pop();
-    // }
-    //user se input
-    int n,a;
-    cout<<"enter how many values\n";
-    cin>>n;
-    for(int i=1; i<=n;i++){
-        cout<<"enter value\n";
-        cin>>a;
-        st.push(a);
+// // Online C++ compiler to run C++ program online
+// //====================================STACK======================================================================
+// #include <iostream>
+// using namespace std;
+// #include<stack>
+// int main() {
+//     stack<int>st;
+//     // st.push(32);
+//     // st.push(22);
+//     // st.push(12);
+//     // st.push(42);
+//     // st.push(52); 
+//     // st.push(25);
+//     // while(!st.empty()){
+//     //     cout<<st.top()<<"\t";
+//     //     st.pop();
+//     // }
+//     //user se input
+//     int n,a;
+//     cout<<"enter how many values\n";
+//     cin>>n;
+//     for(int i=1; i<=n;i++){
+//         cout<<"enter value\n";
+//         cin>>a;
+//         st.push(a);
         
-    }
-    // while(!st.empty()){
-    //     cout<<st.top()<<"\t";
-    //     st.pop();
-    // }
-    //====================smallest value==================================================================
-    int x=st.top();
-    while(!st.empty()){
-        if(x>=st.top()){//samalest value or x<=st.top() to highest value
-            x=st.top();
-        }
-        st.pop();
-    }
-    cout<<"result="<<x<<"\t";
-// Online C++ compiler to run C++ program online
-//=======================================fibo(recursion)==============================================
-#include <iostream>
-using namespace std;
-int fibo(int n){
-    if(n==0 || n==1)
-    {
-       return n; 
-    }
-    return fibo(n-1)+fibo(n-2);
-}
-int main() {
-   int n;
-   cout<<"enter term\n";
-   cin>>n;
-   cout<<fibo;
-}
-// Online C++ compiler to run C++ program online
-///=========================table(recursion)============================
+//     }
+//     // while(!st.empty()){
+//     //     cout<<st.top()<<"\t";
+//     //     st.pop();
+//     // }
+//     //====================smallest value==================================================================
+//     int x=st.top();
+//     while(!st.empty()){
+//         if(x>=st.top()){//samalest value or x<=st.top() to highest value
+//             x=st.top();
+//         }
+//         st.pop();
+//     }
+//     cout<<"result="<<x<<"\t";
+// // Online C++ compiler to run C++ program online
+// //=======================================fibo(recursion)==============================================
+// #include <iostream>
+// using namespace std;
+// int fibo(int n)
+// {
+//     if(n==0 || n==1)
+//     {
+//        return n; 
+//     }
+//     return fibo(n-1)+fibo(n-2);
+// }
+// int main() {
+//    int n;
+//    cout<<"enter term\n";
+//    cin>>n;
+//    cout<<fibo;
+// }
+// // Online C++ compiler to run C++ program online
+// ///=========================table(recursion)============================
 
-#include <iostream>
-using namespace std;
-void table(int n,int i=1 ){
-   if(i>10){
-       return ;
-   }
-   cout<<n*i<<"\t";
-   table(n,i+1);
-}
-int main() {
-   int n;
-   cout<<"enter number\n";
-   cin>>n;
-   table(n);
+// #include <iostream>
+// using namespace std;
+// void table(int n,int i=1 )
+// {
+//    if(i>10){
+//        return ;
+//    }
+//    cout<<n*i<<"\t";
+//    table(n,i+1);
+// }
+// int main() {
+//    int n;
+//    cout<<"enter number\n";
+//    cin>>n;
+//    table(n);
   
  
-}
+// }
 
-// Online C++ compiler to run C++ program online
-//===============================basic=======================
-#include <iostream>
-using namespace std;
-void show(int a){
-    if(a==0){                  //base condition
-        return ;
-    }
-    show(a-1);                    //recursion relationship
-    cout<<a<<"\t";
-}
-int main() {
-   show(6);                         //output===1 2 3 4 5 6
-}
-// Online C++ compiler to run C++ program online
-//===============================factorial with recursion=======================
-#include <iostream>
-using namespace std;
-int fac(int n){
-    if(n==1)
-    {
-        return n;
-    }
-    return n*fac(n-1);
-}
-int main() {
-   cout<<fac(5);
-}
+// // Online C++ compiler to run C++ program online
+// //===============================basic=======================
+// #include <iostream>
+// using namespace std;
+// void show(int a)
+// {
+//     if(a==0){                  //base condition
+//         return ;
+//     }
+//     show(a-1);                    //recursion relationship
+//     cout<<a<<"\t";
+// }
+// int main() {
+//    show(6);                         //output===1 2 3 4 5 6
+// }
+// // Online C++ compiler to run C++ program online
+// //===============================factorial with recursion=======================
+// #include <iostream>
+// using namespace std;
+// int fac(int n){
+//     if(n==1)
+//     {
+//         return n;
+//     }
+//     return n*fac(n-1);
+// }
+// int main() {
+//    cout<<fac(5);
+// }
 
-// Online C++ compiler to run C++ program online
-//===============================sum with recursion=======================
-#include <iostream>
-using namespace std;
-int sum(int n){
-    if(n==0)
-    {
-        return n;
-    }
-    return n+sum(n-1);
-}
-int main() {
-   cout<<sum(5);
-}
+// // Online C++ compiler to run C++ program online
+// //===============================sum with recursion=======================
+// #include <iostream>
+// using namespace std;
+// int sum(int n){
+//     if(n==0)
+//     {
+//         return n;
+//     }
+//     return n+sum(n-1);
+// }
+// int main() {
+//    cout<<sum(5);
+// }
 
-// Online C++ compiler to run C++ program online
-//====================================factorial other method recursion=================================
-#include <iostream>
-using namespace std;
-int fact (int a){
-    int r;
-    if(a==0){
-        return 1;
-    }
-    r=a*fact(a-1);
-    return r;
-}
-int main() {
-    cout<<fact(5);
-}
-
+// // Online C++ compiler to run C++ program online
+// //====================================factorial other method recursion=================================
+// #include <iostream>
+// using namespace std;
+// int fact (int a){
+//     int r;
+//     if(a==0){
+//         return 1;
+//     }
+//     r=a*fact(a-1);
+//     return r;
+// }
+// int main() {
+//     cout<<fact(5);
+// }
+// }
