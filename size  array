@@ -1,833 +1,833 @@
 
-// // ========================linear datatype  sort============================
-// // Online C++ compiler to run C++ program online
-// // ==================question 1================================
-// // write a program to display values of an array
-// // example-1 input:arr[2,1,4,3,5]
-// //             output:-2,31,4,3,5
-// // example-1 input:arr[]
-// //             output:-no data
-// //  solve:-
-// // #include <iostream>
-// // using namespace std;
-// // class top{
-// //     public:void show(int arr[],int s)
-// //     {
-// //         if(s==0)
-// //         {
-// //             cout<<"no data";
-// //         }
-// //         else{
-// //             for (int i=0; i<s; ++i)
-// //             {
-// //                 if(i==s-1)
-// //                 {
-// //                     cout<<arr[i];
-// //                 }
-// //                 else
-// //                 {
-// //                     cout<<arr[i]<<",";
-// //                 }
-// //             }
-// //         }
-// //     }
-// // };
-// // int main()  //driver code
-// // {
-// //     int n;
-// //     cout<<"enter size of array either 0 or more\n";
-// //     cin>>n;
-// //     int a[n];
-// //     int s=sizeof(a)/sizeof(a[0]);
-// //     cout<<"enter"<<n<<"values\n";
-// //     for(int i=0; i<n; ++i){
-// //         cin>>a[i];
-// //     }
-// //   cout<<"s="<<s<<"\n";
-// //   top p;
-// // p.show(a,s);
-// // }
-// // // ===========================bubble sort========================================
-// // #include<iostream>
-// // using namespace std;
-// // class top
-// // {
-// //     int c=0;
-// //     bool f=true;
-// //     public: void bubble(int arr[],int s)
-// //     {
-// //         for(int i=0;i<s;i++)
-// //         {
-// //         for(int j=0;j<s-i-1;j++)
-// //         {
-// //             c++;
-// //             if(arr[j]>arr[j+1])
-// //             {
-// //                 int tmp;
-// //                 tmp=arr[j+1];
-// //                 arr[j+1]=arr[j];
-// //                 arr[j]=tmp;
-// //                 f=false;
-// //             }
+// // // ========================linear datatype  sort============================
+// // // Online C++ compiler to run C++ program online
+// // // ==================question 1================================
+// // // write a program to display values of an array
+// // // example-1 input:arr[2,1,4,3,5]
+// // //             output:-2,31,4,3,5
+// // // example-1 input:arr[]
+// // //             output:-no data
+// // //  solve:-
+// // // #include <iostream>
+// // // using namespace std;
+// // // class top{
+// // //     public:void show(int arr[],int s)
+// // //     {
+// // //         if(s==0)
+// // //         {
+// // //             cout<<"no data";
+// // //         }
+// // //         else{
+// // //             for (int i=0; i<s; ++i)
+// // //             {
+// // //                 if(i==s-1)
+// // //                 {
+// // //                     cout<<arr[i];
+// // //                 }
+// // //                 else
+// // //                 {
+// // //                     cout<<arr[i]<<",";
+// // //                 }
+// // //             }
+// // //         }
+// // //     }
+// // // };
+// // // int main()  //driver code
+// // // {
+// // //     int n;
+// // //     cout<<"enter size of array either 0 or more\n";
+// // //     cin>>n;
+// // //     int a[n];
+// // //     int s=sizeof(a)/sizeof(a[0]);
+// // //     cout<<"enter"<<n<<"values\n";
+// // //     for(int i=0; i<n; ++i){
+// // //         cin>>a[i];
+// // //     }
+// // //   cout<<"s="<<s<<"\n";
+// // //   top p;
+// // // p.show(a,s);
+// // // }
+// // // // ===========================bubble sort========================================
+// // // #include<iostream>
+// // // using namespace std;
+// // // class top
+// // // {
+// // //     int c=0;
+// // //     bool f=true;
+// // //     public: void bubble(int arr[],int s)
+// // //     {
+// // //         for(int i=0;i<s;i++)
+// // //         {
+// // //         for(int j=0;j<s-i-1;j++)
+// // //         {
+// // //             c++;
+// // //             if(arr[j]>arr[j+1])
+// // //             {
+// // //                 int tmp;
+// // //                 tmp=arr[j+1];
+// // //                 arr[j+1]=arr[j];
+// // //                 arr[j]=tmp;
+// // //                 f=false;
+// // //             }
             
                 
-// //             }
-// //             if(f==true)
-// //             {
-// //                 break;
-// //             }
-// //     }
-// //     cout<<"\ncounter hit="<<c;
-// //     }
-// // };
-// // int main()
-// // {
-// //     top p;
-// //     int a[]={5,4,3,2,1};
-// //     int s=sizeof(a)/sizeof(a[0]);
-// //     for(int i=0;i<s;i++)
-// //     {
-// //         cout<<a[i]<<"\t";
+// // //             }
+// // //             if(f==true)
+// // //             {
+// // //                 break;
+// // //             }
+// // //     }
+// // //     cout<<"\ncounter hit="<<c;
+// // //     }
+// // // };
+// // // int main()
+// // // {
+// // //     top p;
+// // //     int a[]={5,4,3,2,1};
+// // //     int s=sizeof(a)/sizeof(a[0]);
+// // //     for(int i=0;i<s;i++)
+// // //     {
+// // //         cout<<a[i]<<"\t";
         
-// //     }
-// //     p.bubble(a,s);
-// //     cout<<"\n after applying\n";
-// //     for(int i=0;i<s;i++)
-// //     {
-// //         cout<<a[i]<<"\t";
-// // }
-// // question:1-=====================no.of swapping ==========================
-// // #include<iostream>
-// // using namespace std;
-// // class top
-// // {
-// //     int c=0;
-// //     bool f=true;
-// //     public: void bubble(int arr[],int s)
-// //     {
-// //         for(int i=0;i<s;i++)
-// //         {
-// //         for(int j=0;j<s-i-1;j++)
-// //         {
-// //             c++;
-// //             if(arr[j]>arr[j+1])
-// //             {
-// //                 int tmp;
-// //                 tmp=arr[j+1];
-// //                 arr[j+1]=arr[j];
-// //                 arr[j]=tmp;
-// //                 f=false;
-// //             }
+// // //     }
+// // //     p.bubble(a,s);
+// // //     cout<<"\n after applying\n";
+// // //     for(int i=0;i<s;i++)
+// // //     {
+// // //         cout<<a[i]<<"\t";
+// // // }
+// // // question:1-=====================no.of swapping ==========================
+// // // #include<iostream>
+// // // using namespace std;
+// // // class top
+// // // {
+// // //     int c=0;
+// // //     bool f=true;
+// // //     public: void bubble(int arr[],int s)
+// // //     {
+// // //         for(int i=0;i<s;i++)
+// // //         {
+// // //         for(int j=0;j<s-i-1;j++)
+// // //         {
+// // //             c++;
+// // //             if(arr[j]>arr[j+1])
+// // //             {
+// // //                 int tmp;
+// // //                 tmp=arr[j+1];
+// // //                 arr[j+1]=arr[j];
+// // //                 arr[j]=tmp;
+// // //                 f=false;
+// // //             }
             
                 
-// //             }
-// //             cout<<"count"<<c;
-// //             if(f==true)
-// //             {
-// //                 break;
-// //             }
-// //     }
-//     // cout<<"\ncounter hit="<<c;
+// // //             }
+// // //             cout<<"count"<<c;
+// // //             if(f==true)
+// // //             {
+// // //                 break;
+// // //             }
+// // //     }
+// //     // cout<<"\ncounter hit="<<c;
+// // //     }
+// // // };
+// // // int main()
+// // // {
+// // //     top p;
+// // //     int a[]={5,4,3,2,1};
+// // //     int s=sizeof(a)/sizeof(a[0]);
+// // //     for(int i=0;i<s;i++)
+// // //     {
+// // //         cout<<a[i]<<"\t";
+        
+// // //     }
+// // //     p.bubble(a,s);
+// // //     cout<<"\n after applying\n";
+// // //     for(int i=0;i<s;i++)
+// // //     {
+// // //         cout<<a[i]<<"\t";
+// // // }
+// // // }
+
+// // // ====================================insertion sort====================================
+// // // #include<iostream>
+// // // using namespace std;
+// // // class top
+// // // {
+// // //     int c=0;
+// // //     bool f=true;
+// // //     public: void insertsort(int arr[],int s)
+// // //     {
+// // //         for(int i=1;i<s;i++)
+// // //         {
+// // //             int chotu=i;
+           
+// // // while(chotu>=0 && arr[chotu]<arr[chotu-1]){
+// // //        int tmp;
+// // //                 tmp=arr[chotu-1];
+// // //                 arr[chotu-1]=arr[chotu];
+// // //                 arr[chotu]=tmp;
+// // //                 chotu--;
+           
+// // //     }
+// // //     }
+// // //     }
+// // // };
+
+// // // int main()
+// // // {
+// // //     top p;
+// // //     int a[]={5,4,2,1,3};
+// // //     int s=sizeof(a)/sizeof(a[0]);
+// // //     for(int i=0;i<s;i++)
+// // //     {
+// // //         cout<<a[i]<<"\t";
+        
+// // //     }
+// // //     p.insertsort(a,s);
+// // //     cout<<"\n after applying\n";
+// // //     for(int i=0;i<s;i++)
+// // //     {
+// // //         cout<<a[i]<<"\t";
+// // // }
+// // // }
+// // // // ====================================selection sort========================================
+// // // #include<iostream>
+// // // using namespace std;
+// // // void select(int arr[],int s){
+// // //     for(int i=0;i<s;i++)
+// // // {
+// // //  int chotu=i;
+// // //  for(int j=i+1;j<s; j++){
+// // //      if(arr[chotu]>arr[j]){
+// // //          chotu=j;
+// // //      }
+// // //  }
+// // //  if(chotu!=i){
+// // //      int tmp;
+// // //      tmp=arr[i];
+// // //      arr[i]=arr[chotu];
+// // //      arr[chotu]=tmp;
+// // //  }
+// // // }
+// // // }
+// // // int main()
+// // // {
+// // //     int arr[]={4,1,5,3,2};
+// // //     int s=sizeof(arr)/sizeof(arr[0]);
+// // //     for (int i=0;i<s;i++)
+// // //     {
+// // //         cout<<arr[i]<<"\t";
+// // //     }
+// // //     cout<<"\n after applying\n"<<endl;
+// // //     select(arr,s);
+// // //     for(int i=0;i<s;i++)
+// // //     {
+// // //         cout<<arr[i]<<"\t";
+// // //     }
+// // // }
+// // // ===============================linear datatype  sort end============================================
+// // // Online C++ compiler to run C++ program online
+// // ////============================= QUIK SORT ALGORITHM========================================
+// // // #include <iostream>
+// // // using namespace std;
+// // // int divide(int arr[],int low,int high){
+// // //     int pv=arr[low];
+// // //     int i=low+1;
+// // //     int j=high;
+// // //     do{
+// // //         while(arr[i]<pv){
+// // //             i++;
+// // //         }
+// // //         while(arr[j]>pv){
+// // //             j--;
+// // //         }
+// // //         if(i<j){
+// // //             int tmp; 
+// // //             tmp=arr[i];
+// // //             arr[i]=arr[j];
+// // //             arr[j]=tmp;
+// // //         }
+// // //     }
+// // //     while(i<j);
+// // //              int tmp; 
+// // //             tmp=arr[low];
+// // //             arr[low]=arr[j];
+// // //             arr[j]=tmp;
+// // //             return j;
+// // // }
+// // // void qksort(int arr[],int low,int high)
+// // // {
+// // //     int pv;
+// // //     if(low<high){
+// // //         pv=divide(arr,low,high);
+// // //         qksort(arr,low,pv-1);
+// // //         qksort(arr,pv+1,high);
+        
+// // //     }
+// // // }
+// // // int main() {
+// // //  int arr[]={9,2,1,5,6};
+// // //  int size=sizeof(arr)/sizeof(arr[0]);
+// // //  cout<<"\nBefore applying\n";
+// // //  for(int i=0; i<size; i++){
+// // //      cout<<arr[i]<<"\t";
+// // //  }
+// // //  qksort(arr,0,size-1);
+// // //  cout<<"\nAfter applying quik sort\n";
+// // //  for(int i=0; i<size; i++){
+// // //      cout<<arr[i]<<"\t";
+// // //     }
+// // // }
+
+// // // //========================merge sort=====================================
+// // // #include <iostream>
+// // // using namespace std;
+// // // void combine(int a[],int low ,int mid, int high){
+    
+// // //     int b[high+1];//temporary array to store sorted elements 
+// // //     int i,j;
+// // //     int k=low;
+// // //     i=low;
+// // //     j=mid+1;
+
+// // //     while(i<=mid && j<=high){
+        
+// // //         if(a[i]<a[j]){
+// // //             b[k]=a[i];
+// // //             i++;
+// // //             // k++;
+// // //         }else{
+// // //             b[k]=a[j];
+// // //             j++;
+// // //             // k++;
+// // //         }
+// // //         k++;
+// // //     }
+
+// // //     while(i<=mid){
+// // //         b[k]=a[i];
+// // //         i++;
+// // //         k++;
+// // //     }
+// // //     while(j<=high){
+// // //         b[k]=a[j];
+// // //         j++;
+// // //         k++;
+// // //     }
+
+// // //     for(int i=low; i<=high; ++i){
+// // //         a[i]=b[i];
+// // //     }
+// // // }
+// // // void merge(int a[] , int low,int high){
+// // //     int mid;
+// // //     if(low<high){//base case :
+// // //     //stop when low == high
+
+// // //     mid = (low+high)/2;//find the middle value of index
+// // //     merge(a,low,mid);//recursively sort left half
+// // //     merge(a,mid+1,high);//recursively sort right half
+// // //     combine(a,low,mid,high);//merge both halves
+
+// // //  }
+    
+// // // }
+// // // int main()
+// // // {
+// // //     int a[] = {5,1,7,2,8,6,3};
+// // //     int s =sizeof(a)/sizeof(a[0]);
+    
+// // //     cout<<"Before applying quick sort";
+// // //     for(int i=0; i<s; ++i){
+// // //         cout<<a[i]<<" ";
+// // //     }
+    
+// // //     merge(a,0,s-1);
+    
+// // //     cout<<"after applying quick sort";
+// // //     for(int i=0; i<s; ++i){
+// // //         cout<<a[i]<<",";}
+// // // }
+// // // // ====================================recursion========================================
+// // // # include<iostream> 
+// // // using namespace std;
+// // // void show (int a)
+// // // {
+    
+// // //     if(a==0)  //base codition
+// // //     {
+// // //         return;
+// // //     }
+// // // // show(a-1);   //tail recursion
+// // // cout<<a<<"\t"; ///recursion relationship
+// // // show(a-1);   //head recursion
+// // // }
+// // // int main()
+// // // {
+// // //     show(5);
+    
+// // // }
+// // // // =======================factorial with using recursion====================
+// // // # include<iostream> 
+// // // using namespace std;
+// // // int fact (int a)
+// // // {
+// // //     int r;
+// // //     if(a==1)  //base codition
+// // //     {
+// // //         return 1;
+// // //     }
+
+// // // r=a*fact(a-1);//recursion relationship
+// // // return r;
+// // // }
+// // // int main()
+// // // {
+// // //     cout<<fact(4);
+    
+// // // }
+
+
+// // // // ====================fibonacchi series===================================
+// // // # include <iostream>
+// // // using namespace std;
+// // // int fib(int a)
+// // // {
+// // //     if(a==0)
+// // //     {
+// // //         return 0;
+// // //     }
+// // //     if(a==1)
+// // //     {
+// // //         return 1;
+// // //     }
+// // //     return fib(a-1)+fib(a-2);
+// // // }
+// // // int main()
+// // // {
+// // //     int a;
+// // //     cout<<"enter the number";
+// // //     cin>>a;
+    
+// // //     cout<<fib(a);
+// // // }
+// // // // ==============create a program table ith using recurssion=========================
+// // // # include<iostream>
+// // // using namespace std;
+// // // void table(int n,int c=1)
+// // // {
+// // //     if(c>10)
+// // //     {
+// // //         return;
+// // //     }
+// // //     cout<<n*c<<"\t";
+// // //     table(n,c+1);
+// // // }
+// // // int main()
+// // // {
+// // //    int n;
+// // //    cout<<"enter the number";
+// // //    cin>>n;
+// // //    table(n);
+    
+// // // }
+
+// // //  ===================================question=========================
+// // // #include<iostream>
+// // // using namespace std;
+// // // int main()
+// // // {
+// // //     int i=1,j=1,k=0;
+// // //     if(++k,j,i++)
+// // //     {
+// // //         cout<<i<<","<<j<<","<<k;
+// // //     }
+// // // }
+// // // =========================================( function template)=============================================
+// // #include <iostream>
+// // using namespace std;
+// // template<typename t1>
+// // t1 sum(t1 a,t1 b)
+// // {
+// //     return a+b;
+// // }
+// // template<typename t1,typename t2>
+// // int multi (t1 x1,t2 x2)
+// // {
+// //     return x1*x2;
+    
+// // }
+// // int main()
+// // {
+// //     cout<<sum(2,3)<<"\n";
+// //     cout<<multi(3,3);
+// // }
+// // // -------------------------------------------------------------------------------
+// // #include <iostream>
+// // using namespace std;
+// // template<typename t1>
+// // class cybrom
+// // {
+// //     public:t1 show(t1 a)
+// //     {
+// //         return ++a;
+        
 // //     }
 // // };
 // // int main()
 // // {
-// //     top p;
-// //     int a[]={5,4,3,2,1};
-// //     int s=sizeof(a)/sizeof(a[0]);
-// //     for(int i=0;i<s;i++)
-// //     {
-// //         cout<<a[i]<<"\t";
-        
-// //     }
-// //     p.bubble(a,s);
-// //     cout<<"\n after applying\n";
-// //     for(int i=0;i<s;i++)
-// //     {
-// //         cout<<a[i]<<"\t";
+// //     cybrom<int>obj;
+// //     cout<<obj.show('a'); //output :-98
+// //     // cout<<obj.show(7);// output:-8
 // // }
-// // }
-
-// // ====================================insertion sort====================================
+// // // --------------------------------------------------------------------------------------------------
 // // #include<iostream>
 // // using namespace std;
-// // class top
-// // {
-// //     int c=0;
-// //     bool f=true;
-// //     public: void insertsort(int arr[],int s)
-// //     {
-// //         for(int i=1;i<s;i++)
-// //         {
-// //             int chotu=i;
-           
-// // while(chotu>=0 && arr[chotu]<arr[chotu-1]){
-// //        int tmp;
-// //                 tmp=arr[chotu-1];
-// //                 arr[chotu-1]=arr[chotu];
-// //                 arr[chotu]=tmp;
-// //                 chotu--;
-           
+// // namespace cybrom{
+    
+// //     void student(){
+// //         cout<<"cybrom student"<<endl;
 // //     }
-// //     }
-// //     }
-// // };
-
-// // int main()
-// // {
-// //     top p;
-// //     int a[]={5,4,2,1,3};
-// //     int s=sizeof(a)/sizeof(a[0]);
-// //     for(int i=0;i<s;i++)
-// //     {
-// //         cout<<a[i]<<"\t";
+    
+// // namespace bhopal{
+    
+// //     void student(){
         
+// //         cout<<"bhopal student"<<endl;
 // //     }
-// //     p.insertsort(a,s);
-// //     cout<<"\n after applying\n";
-// //     for(int i=0;i<s;i++)
-// //     {
-// //         cout<<a[i]<<"\t";
+// // } 
+// // void show(){
+    
+// //     cout<<"first program"<<endl;
 // // }
-// // }
-// // // ====================================selection sort========================================
-// // #include<iostream>
-// // using namespace std;
-// // void select(int arr[],int s){
-// //     for(int i=0;i<s;i++)
-// // {
-// //  int chotu=i;
-// //  for(int j=i+1;j<s; j++){
-// //      if(arr[chotu]>arr[j]){
-// //          chotu=j;
-// //      }
-// //  }
-// //  if(chotu!=i){
-// //      int tmp;
-// //      tmp=arr[i];
-// //      arr[i]=arr[chotu];
-// //      arr[chotu]=tmp;
-// //  }
-// // }
-// // }
-// // int main()
-// // {
-// //     int arr[]={4,1,5,3,2};
-// //     int s=sizeof(arr)/sizeof(arr[0]);
-// //     for (int i=0;i<s;i++)
-// //     {
-// //         cout<<arr[i]<<"\t";
+// // class iostream{
+    
+// //     public:void show(){
+// //         cout<<"clsaa example"<<endl;
 // //     }
-// //     cout<<"\n after applying\n"<<endl;
-// //     select(arr,s);
-// //     for(int i=0;i<s;i++)
-// //     {
-// //         cout<<arr[i]<<"\t";
-// //     }
+// // }coutnew;
 // // }
-// // ===============================linear datatype  sort end============================================
-// // Online C++ compiler to run C++ program online
-// ////============================= QUIK SORT ALGORITHM========================================
-// // #include <iostream>
-// // using namespace std;
-// // int divide(int arr[],int low,int high){
-// //     int pv=arr[low];
-// //     int i=low+1;
-// //     int j=high;
-// //     do{
-// //         while(arr[i]<pv){
-// //             i++;
-// //         }
-// //         while(arr[j]>pv){
-// //             j--;
-// //         }
-// //         if(i<j){
-// //             int tmp; 
-// //             tmp=arr[i];
-// //             arr[i]=arr[j];
-// //             arr[j]=tmp;
-// //         }
-// //     }
-// //     while(i<j);
-// //              int tmp; 
-// //             tmp=arr[low];
-// //             arr[low]=arr[j];
-// //             arr[j]=tmp;
-// //             return j;
-// // }
-// // void qksort(int arr[],int low,int high)
-// // {
-// //     int pv;
-// //     if(low<high){
-// //         pv=divide(arr,low,high);
-// //         qksort(arr,low,pv-1);
-// //         qksort(arr,pv+1,high);
-        
-// //     }
-// // }
-// // int main() {
-// //  int arr[]={9,2,1,5,6};
-// //  int size=sizeof(arr)/sizeof(arr[0]);
-// //  cout<<"\nBefore applying\n";
-// //  for(int i=0; i<size; i++){
-// //      cout<<arr[i]<<"\t";
-// //  }
-// //  qksort(arr,0,size-1);
-// //  cout<<"\nAfter applying quik sort\n";
-// //  for(int i=0; i<size; i++){
-// //      cout<<arr[i]<<"\t";
-// //     }
-// // }
+// // // using namespace cybrom;
 
-// // //========================merge sort=====================================
-// // #include <iostream>
-// // using namespace std;
-// // void combine(int a[],int low ,int mid, int high){
+// // int main(){
     
-// //     int b[high+1];//temporary array to store sorted elements 
-// //     int i,j;
-// //     int k=low;
-// //     i=low;
-// //     j=mid+1;
-
-// //     while(i<=mid && j<=high){
-        
-// //         if(a[i]<a[j]){
-// //             b[k]=a[i];
-// //             i++;
-// //             // k++;
-// //         }else{
-// //             b[k]=a[j];
-// //             j++;
-// //             // k++;
-// //         }
-// //         k++;
-// //     }
-
-// //     while(i<=mid){
-// //         b[k]=a[i];
-// //         i++;
-// //         k++;
-// //     }
-// //     while(j<=high){
-// //         b[k]=a[j];
-// //         j++;
-// //         k++;
-// //     }
-
-// //     for(int i=low; i<=high; ++i){
-// //         a[i]=b[i];
-// //     }
+// //     cybrom::bhopal::student();
+// //     cybrom::student();
+// //     // show();
+// //     // coutnew.show();
+// //     // iostream obj;
+// //     // obj.show();
 // // }
-// // void merge(int a[] , int low,int high){
-// //     int mid;
-// //     if(low<high){//base case :
-// //     //stop when low == high
-
-// //     mid = (low+high)/2;//find the middle value of index
-// //     merge(a,low,mid);//recursively sort left half
-// //     merge(a,mid+1,high);//recursively sort right half
-// //     combine(a,low,mid,high);//merge both halves
-
-// //  }
-    
-// // }
-// // int main()
-// // {
-// //     int a[] = {5,1,7,2,8,6,3};
-// //     int s =sizeof(a)/sizeof(a[0]);
-    
-// //     cout<<"Before applying quick sort";
-// //     for(int i=0; i<s; ++i){
-// //         cout<<a[i]<<" ";
-// //     }
-    
-// //     merge(a,0,s-1);
-    
-// //     cout<<"after applying quick sort";
-// //     for(int i=0; i<s; ++i){
-// //         cout<<a[i]<<",";}
-// // }
-// // // ====================================recursion========================================
-// // # include<iostream> 
-// // using namespace std;
-// // void show (int a)
-// // {
-    
-// //     if(a==0)  //base codition
-// //     {
-// //         return;
-// //     }
-// // // show(a-1);   //tail recursion
-// // cout<<a<<"\t"; ///recursion relationship
-// // show(a-1);   //head recursion
-// // }
-// // int main()
-// // {
-// //     show(5);
-    
-// // }
-// // // =======================factorial with using recursion====================
-// // # include<iostream> 
-// // using namespace std;
-// // int fact (int a)
-// // {
-// //     int r;
-// //     if(a==1)  //base codition
-// //     {
-// //         return 1;
-// //     }
-
-// // r=a*fact(a-1);//recursion relationship
-// // return r;
-// // }
-// // int main()
-// // {
-// //     cout<<fact(4);
-    
-// // }
-
-
-// // // ====================fibonacchi series===================================
-// // # include <iostream>
-// // using namespace std;
-// // int fib(int a)
-// // {
-// //     if(a==0)
-// //     {
-// //         return 0;
-// //     }
-// //     if(a==1)
-// //     {
-// //         return 1;
-// //     }
-// //     return fib(a-1)+fib(a-2);
-// // }
-// // int main()
-// // {
-// //     int a;
-// //     cout<<"enter the number";
-// //     cin>>a;
-    
-// //     cout<<fib(a);
-// // }
-// // // ==============create a program table ith using recurssion=========================
-// // # include<iostream>
-// // using namespace std;
-// // void table(int n,int c=1)
-// // {
-// //     if(c>10)
-// //     {
-// //         return;
-// //     }
-// //     cout<<n*c<<"\t";
-// //     table(n,c+1);
-// // }
-// // int main()
-// // {
-// //    int n;
-// //    cout<<"enter the number";
-// //    cin>>n;
-// //    table(n);
-    
-// // }
-
-// //  ===================================question=========================
-// // #include<iostream>
-// // using namespace std;
-// // int main()
-// // {
-// //     int i=1,j=1,k=0;
-// //     if(++k,j,i++)
-// //     {
-// //         cout<<i<<","<<j<<","<<k;
-// //     }
-// // }
-// // =========================================( function template)=============================================
-// #include <iostream>
-// using namespace std;
-// template<typename t1>
-// t1 sum(t1 a,t1 b)
-// {
-//     return a+b;
-// }
-// template<typename t1,typename t2>
-// int multi (t1 x1,t2 x2)
-// {
-//     return x1*x2;
-    
-// }
-// int main()
-// {
-//     cout<<sum(2,3)<<"\n";
-//     cout<<multi(3,3);
-// }
-// // -------------------------------------------------------------------------------
-// #include <iostream>
-// using namespace std;
-// template<typename t1>
-// class cybrom
-// {
-//     public:t1 show(t1 a)
-//     {
-//         return ++a;
-        
-//     }
-// };
-// int main()
-// {
-//     cybrom<int>obj;
-//     cout<<obj.show('a'); //output :-98
-//     // cout<<obj.show(7);// output:-8
-// }
-// // --------------------------------------------------------------------------------------------------
-// #include<iostream>
-// using namespace std;
-// namespace cybrom{
-    
-//     void student(){
-//         cout<<"cybrom student"<<endl;
-//     }
-    
-// namespace bhopal{
-    
-//     void student(){
-        
-//         cout<<"bhopal student"<<endl;
-//     }
-// } 
-// void show(){
-    
-//     cout<<"first program"<<endl;
-// }
-// class iostream{
-    
-//     public:void show(){
-//         cout<<"clsaa example"<<endl;
-//     }
-// }coutnew;
-// }
-// // using namespace cybrom;
-
-// int main(){
-    
-//     cybrom::bhopal::student();
-//     cybrom::student();
-//     // show();
-//     // coutnew.show();
-//     // iostream obj;
-//     // obj.show();
-// }
-// // ----------------------------------------------------------------------------
+// // // ----------------------------------------------------------------------------
+// // // #include<iostream>
+// // // #include<array>
+// // // using namespace std;
+// // // int main()
+// // // {
+// // //   int arr[]={1,2,3,4,5,6};
+// // //   for(int i=0; i<6; ++i){
+// // //       cout<<arr[i];
+// // //   }
+// // // };
+// // // ----------------------------------------------------------------------------------------
 // // #include<iostream>
 // // #include<array>
 // // using namespace std;
 // // int main()
 // // {
-// //   int arr[]={1,2,3,4,5,6};
-// //   for(int i=0; i<6; ++i){
-// //       cout<<arr[i];
+// //  array<int,5>arr{2,3,4,5,6};
+// //    for(int i=0; i<arr.size(); ++i){
+// //        cout<<arr[i];
+// //     }
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // // =======================================( array )=================================
+// // #include<iostream>
+// // #include<array>
+// // using namespace std;
+// // #include<algorithm>
+// // int main()
+// // {
+    
+// //     array<int,5>v{40,3,2,1,9};
+// //    sort(v.begin(),v.end());
+// //    cout<<"\ndata in ascebding order\n";
+// //   for(auto k:v)
+// //   {
+// //       cout<<k<<"\t";
 // //   }
-// // };
-// // ----------------------------------------------------------------------------------------
-// #include<iostream>
-// #include<array>
-// using namespace std;
-// int main()
-// {
-//  array<int,5>arr{2,3,4,5,6};
-//    for(int i=0; i<arr.size(); ++i){
-//        cout<<arr[i];
-//     }
-// }
+// //   cout<<v.size()<<endl;
+// //   cout<<"size=";
+// //   cout<<v[3];
+// // }
+// // // ===============================================================
+// // ///second highest number
 
+// // #include <iostream>
+// // #include<array>
+// // using namespace std;
+// // #include<algorithm> //we use only for assending order data 
+// // int main()
+// // {
+// //     array<int,5>v{2,3,4,6,8};
 
+// //     sort(v.begin(),v.end());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // =======================================( array )=================================
-// #include<iostream>
-// #include<array>
-// using namespace std;
-// #include<algorithm>
-// int main()
-// {
+// //     for(auto k:v){
+// //         cout<<k; //data inaseending order;
+// //     }
+// //     cout<<v.size()<<endl;
+// //     cout<<v[3];
     
-//     array<int,5>v{40,3,2,1,9};
-//    sort(v.begin(),v.end());
-//    cout<<"\ndata in ascebding order\n";
-//   for(auto k:v)
-//   {
-//       cout<<k<<"\t";
-//   }
-//   cout<<v.size()<<endl;
-//   cout<<"size=";
-//   cout<<v[3];
-// }
-// // ===============================================================
-// ///second highest number
-
-// #include <iostream>
-// #include<array>
-// using namespace std;
-// #include<algorithm> //we use only for assending order data 
-// int main()
-// {
-//     array<int,5>v{2,3,4,6,8};
-
-//     sort(v.begin(),v.end());
-
-//     for(auto k:v){
-//         cout<<k; //data inaseending order;
-//     }
-//     cout<<v.size()<<endl;
-//     cout<<v[3];
-    
-// }
+// // }
 
 
 
-// #include <iostream>
-// #include<array>
-// using namespace std;
-// #include<algorithm> //we use only for assending order data 
-// int main()
-// {
-//     array<int,5>v{2,3,4,6,8};
-//     array<double,3>v2{2.3,4.5,6.4};
-//     for(int i=0; i<v.size(); ++i){
+// // #include <iostream>
+// // #include<array>
+// // using namespace std;
+// // #include<algorithm> //we use only for assending order data 
+// // int main()
+// // {
+// //     array<int,5>v{2,3,4,6,8};
+// //     array<double,3>v2{2.3,4.5,6.4};
+// //     for(int i=0; i<v.size(); ++i){
         
-//         cout<<v.at(i)<<endl;
-//     }
+// //         cout<<v.at(i)<<endl;
+// //     }
     
-//     for(auto p:v2){
-//         cout<<p<<endl;
-//     }
+// //     for(auto p:v2){
+// //         cout<<p<<endl;
+// //     }
     
-//     cout<<"front"<<v.front()<<endl;
-//     cout<<"back"<<v.back()<<endl;
-//     sort(v.begin(),v.end());
-//     for(auto k:v){
-//         cout<<k; //data inaseending order;
-//     }
-// }
+// //     cout<<"front"<<v.front()<<endl;
+// //     cout<<"back"<<v.back()<<endl;
+// //     sort(v.begin(),v.end());
+// //     for(auto k:v){
+// //         cout<<k; //data inaseending order;
+// //     }
+// // }
 
 
-// #include <iostream>
-// #include<array>
+// // #include <iostream>
+// // #include<array>
+// // using namespace std;
+// // int main()
+// // {
+// //     array<int,5>v{2,3,4,6,8};
+// //     for(int i=0; i<v.size(); ++i){
+        
+// //         cout<<v.at(i)<<endl;
+// //     }
+    
+// //     for(int p:v){
+// //         cout<<p<<endl;
+// //     }
+// // }
+
+
+// // #include <iostream>
+// // #include<array>
+// // using namespace std;
+// // int main()
+// // {
+// //     array<int,5>v{2,3,4,6,8};
+// //     // for(int i=0; i<v.size(); ++i){
+        
+// //     //     // cout<<v.at(i)<<endl;
+// //     // }
+    
+// //     for(auto p:v){
+// //         cout<<p<<endl;
+// //     }
+// // }
+
+
+
+
+// // #include <iostream>
+// // #include<array>
+// // using namespace std;
+// // int main()
+// // {
+// //     array<int,5>v{2,3,4,6,8}; 
+// //     array<double,3>v2{2.3,4.5,6.4};
+// //     for(int i=0; i<v.size(); ++i){
+        
+// //         cout<<v.at(i)<<endl;
+// //     }
+    
+// //     for(auto p:v2){
+// //         cout<<p<<endl;
+// //     }
+// // }
+// # include <iostream>
 // using namespace std;
+// # include <array>
 // int main()
 // {
-//     array<int,5>v{2,3,4,6,8};
-//     for(int i=0; i<v.size(); ++i){
-        
-//         cout<<v.at(i)<<endl;
+//     array<int,5>arr1{2,4,5,6,7};
+//     array<int,5>arr2{4,5,2,1,9};
+//     arr1.swap(arr2);
+//     for(auto p:arr1)
+//     {
+//         cout<<p<<"\n";
 //     }
-    
-//     for(int p:v){
-//         cout<<p<<endl;
+//     cout<<"\narr2\n";
+//     for(auto p2:arr2)
+//     {
+//         cout<<p2<<"\n";
 //     }
 // }
-
-
+// // ------------------------------------------------------------------------------
+// // Online C++ compiler to run C++ program online
+// // =============================== lambda expression =============================
 // #include <iostream>
-// #include<array>
 // using namespace std;
-// int main()
-// {
-//     array<int,5>v{2,3,4,6,8};
-//     // for(int i=0; i<v.size(); ++i){
-        
-//     //     // cout<<v.at(i)<<endl;
-//     // }
-    
-//     for(auto p:v){
-//         cout<<p<<endl;
-//     }
-// }
-
-
-
-
-// #include <iostream>
-// #include<array>
-// using namespace std;
-// int main()
-// {
-//     array<int,5>v{2,3,4,6,8}; 
-//     array<double,3>v2{2.3,4.5,6.4};
-//     for(int i=0; i<v.size(); ++i){
-        
-//         cout<<v.at(i)<<endl;
-//     }
-    
-//     for(auto p:v2){
-//         cout<<p<<endl;
-//     }
-// }
-# include <iostream>
-using namespace std;
-# include <array>
-int main()
-{
-    array<int,5>arr1{2,4,5,6,7};
-    array<int,5>arr2{4,5,2,1,9};
-    arr1.swap(arr2);
-    for(auto p:arr1)
-    {
-        cout<<p<<"\n";
-    }
-    cout<<"\narr2\n";
-    for(auto p2:arr2)
-    {
-        cout<<p2<<"\n";
-    }
-}
-// ------------------------------------------------------------------------------
-// Online C++ compiler to run C++ program online
-// =============================== lambda expression =============================
-#include <iostream>
-using namespace std;
-#include <vector>
-#include <algorithm>
-int main() {
-   vector<int>v={4,1,3,2,7};
-   sort(v.begin(),v.end(),less<int>());
-   sort(v.begin(),v.end(),greater<int>());
-   sort(v.begin(),v.end(),[](int a,int b){return a>b;});
+// #include <vector>
+// #include <algorithm>
+// int main() {
+//    vector<int>v={4,1,3,2,7};
+//    sort(v.begin(),v.end(),less<int>());
+//    sort(v.begin(),v.end(),greater<int>());
+//    sort(v.begin(),v.end(),[](int a,int b){return a>b;});
    
-   for(auto p:v){
-       cout<<p<<"\t";
-   }
-   cout<<"\n";
-   cout<<[](int a){return a+10;}(5)<<"\n";
-    cout<<[](int a,int b){return a>b;}(20,3)<<"\n";
-    auto k=[](int a) {return a*a;};
-    cout<<k(7);
-}
-// =================================================================================================================
-                                            // sum to two vector size are same 
-#include <iostream>
-using namespace std;
-#include <vector>
-int main() {
-int n;
-cout << "Enter the size of vectors: ";
-cin >> n;
-vector<int> v1(n);
-vector<int> v2(n);
-cout << "Enter the elements of vector V1: ";
-for (int i = 0; i < n; i++) {
-cin >> v1[i];
-}
-cout << "Enter the elements of vector V2: ";
-for (int i = 0; i < n; i++) {
-cin >> v2[i];
-}
-vector<int> dp(n);
-for (int i = 0; i < n; i++) {
-dp[i] = v1[i] + v2[i];
-}
-cout << "Sum of vectors: ";
-for (int i = 0; i < n; i++) {
-cout << dp[i] << " ";
-}
-return 0;
-}
-// ================================================================================================================
-                                            // sum to two vector size are different 
-#include <iostream>
-using namespace std;
-// #include<algorithm>
-#include<vector>
-int main()
-{
- int n,n1;
- cout<<"enter the first size:";
- cin>>n;
- cout<<"enter the sec size:";
- cin>>n1;
+//    for(auto p:v){
+//        cout<<p<<"\t";
+//    }
+//    cout<<"\n";
+//    cout<<[](int a){return a+10;}(5)<<"\n";
+//     cout<<[](int a,int b){return a>b;}(20,3)<<"\n";
+//     auto k=[](int a) {return a*a;};
+//     cout<<k(7);
+// }
+// // =================================================================================================================
+//                                             // sum to two vector size are same 
+// #include <iostream>
+// using namespace std;
+// #include <vector>
+// int main() {
+// int n;
+// cout << "Enter the size of vectors: ";
+// cin >> n;
+// vector<int> v1(n);
+// vector<int> v2(n);
+// cout << "Enter the elements of vector V1: ";
+// for (int i = 0; i < n; i++) {
+// cin >> v1[i];
+// }
+// cout << "Enter the elements of vector V2: ";
+// for (int i = 0; i < n; i++) {
+// cin >> v2[i];
+// }
+// vector<int> dp(n);
+// for (int i = 0; i < n; i++) {
+// dp[i] = v1[i] + v2[i];
+// }
+// cout << "Sum of vectors: ";
+// for (int i = 0; i < n; i++) {
+// cout << dp[i] << " ";
+// }
+// return 0;
+// }
+// // ================================================================================================================
+//                                             // sum to two vector size are different 
+// #include <iostream>
+// using namespace std;
+// // #include<algorithm>
+// #include<vector>
+// int main()
+// {
+//  int n,n1;
+//  cout<<"enter the first size:";
+//  cin>>n;
+//  cout<<"enter the sec size:";
+//  cin>>n1;
  
- vector<int>v1(n);
- vector<int>v2(n1);
+//  vector<int>v1(n);
+//  vector<int>v2(n1);
  
- cout<<"enter the v1 value :";
- for(int i=0; i<n; i++){
-    cin >> v1[i]; 
- }
+//  cout<<"enter the v1 value :";
+//  for(int i=0; i<n; i++){
+//     cin >> v1[i]; 
+//  }
  
- cout<<"enter the v2 value :";
- for(int i=0; i<n1; i++){
-    cin >> v2[i]; 
- }
+//  cout<<"enter the v2 value :";
+//  for(int i=0; i<n1; i++){
+//     cin >> v2[i]; 
+//  }
  
- vector<int>v(n);
+//  vector<int>v(n);
  
  
- for(int i=0; i<=n; ++i){
-    v[i] = v1[i]+v2[i];
- }
+//  for(int i=0; i<=n; ++i){
+//     v[i] = v1[i]+v2[i];
+//  }
  
- for(int i=0; i<=n; ++i){
-     cout<<v[i];
-}
- }
-// ===============================================================================================================
-// Online C++ compiler to run C++ program online
-#include <iostream>
-using namespace std;
-#include <vector>
-int main() {
-    vector<int>v1{5,1,7};
-    vector<int>v2{5,5,7,8,1,2};
-    int a=0;
-    int b=0;
-    for(int i=0; i<v1.size();i++){
-        a=a*10+v1[i];
-    }
-    for(int i=0; i<v2.size();i++){
-        b=b*10+v2[i];
-    }
-   cout<<a+b<<"\t";
-}
-// ==========================================================================================================================
-// Online C++ compiler to run C++ program online
-#include <iostream>
-using namespace std;
-#include <vector>
-#include <algorithm>
-int main() {
-    vector<int>v1{5,1,7,1,3,5,2,5};
-    sort(v1.begin(),v1.end());
-    int x=1;
-    for(int i=1; i<v1.size();i++){
-        if(v1[x-1]!=v1[i]){
-            v1[x]=v1[i];
-            x++;
-        }
-    }
-    for(int i=0; i<x; i++){
-        cout<<v1[i]<<"\t";
-    }
-}
+//  for(int i=0; i<=n; ++i){
+//      cout<<v[i];
+// }
+//  }
+// // ===============================================================================================================
+// // Online C++ compiler to run C++ program online
+// #include <iostream>
+// using namespace std;
+// #include <vector>
+// int main() {
+//     vector<int>v1{5,1,7};
+//     vector<int>v2{5,5,7,8,1,2};
+//     int a=0;
+//     int b=0;
+//     for(int i=0; i<v1.size();i++){
+//         a=a*10+v1[i];
+//     }
+//     for(int i=0; i<v2.size();i++){
+//         b=b*10+v2[i];
+//     }
+//    cout<<a+b<<"\t";
+// }
+// // ==========================================================================================================================
+// // Online C++ compiler to run C++ program online
+// #include <iostream>
+// using namespace std;
+// #include <vector>
+// #include <algorithm>
+// int main() {
+//     vector<int>v1{5,1,7,1,3,5,2,5};
+//     sort(v1.begin(),v1.end());
+//     int x=1;
+//     for(int i=1; i<v1.size();i++){
+//         if(v1[x-1]!=v1[i]){
+//             v1[x]=v1[i];
+//             x++;
+//         }
+//     }
+//     for(int i=0; i<x; i++){
+//         cout<<v1[i]<<"\t";
+//     }
+// }
