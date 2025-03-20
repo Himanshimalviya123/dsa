@@ -822,7 +822,7 @@
 //     sort(v1.begin(),v1.end());
 //     int x=1;
 //     for(int i=1; i<v1.size();i++){
-//         if(v1[x-1]!=v1[i]){
+        // if(v1[x-1]!=v1[i]){
 //             v1[x]=v1[i];
 //             x++;
 //         }

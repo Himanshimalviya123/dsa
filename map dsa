@@ -1,0 +1,12 @@
+
+#include <iostream>
+#include <map>
+using namespace std;
+int main()
+{
+    map<int,string>student{{101,"amit"},{108,"shubh"},{103,"joy"},{13,"sumit"}};
+    for(auto p:student)
+    {
+        cout<<p.first<<","<<p.second<<"\n";
+    }
+}
