@@ -1,0 +1,162 @@
+// =============size function====================
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3};
+     cout<<v.size();
+    
+}
+// ==================================(capacity)=================================
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3,7};
+     v.push_back(15);                             // output:-12
+     v.push_back(28);
+     cout<<v.capacity()<<endl;
+    return 0;
+}
+// --------------------------------complete array print kerne ke liye for loop chelega-----------------------------------------
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3,7};
+     v.push_back(15);
+     v.push_back(28);
+    //  cout<<v.capacity()<<endl;
+    for (auto val:v)
+    {
+        cout<<val<<" ";
+    }
+    return 0;
+}
+// =============================(push_back) function=================================
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3};                      //output:-7
+     v.push_back(15);
+     v.push_back(28);
+     cout<<v.size()<<endl;
+    return 0;
+}
+// =============================(pop_back) function=================================
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3,7};
+     v.push_back(15);
+    //  v.emplace_back(29);
+          v.pop_back();
+    //  cout<<v.capacity()<<endl;
+    for (auto val:v)
+    {
+        cout<<val<<" ";
+    }
+    return 0;
+}
+// ===========================(at() or [])========================================
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3,7};
+     cout<<v[4];
+     cout<<v.at(4);
+   
+}
+// =================================(front / back) function==========================================
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3,7};
+    
+     cout<<"front= "<<v.front()<<endl;
+      cout<<"back= "<<v.back()<<endl;
+   
+// }
+// ====================================( erase function)=====================================
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3,7};
+    
+    v.erase(v.begin());                     // first indexing element ko delete kerne ke liye
+    for (auto p:v)
+{
+    cout<<p;
+}   
+}
+// --------------------------------------
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3,7};                             // second indexing element ko delete kerne ke liye
+    
+    v.erase(v.begin()+1);
+    for (auto p:v)
+{
+    cout<<p;
+}   
+}
+// ================================================(insert funtion)======================================
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3,7};
+    
+    v.insert(v.begin()+2,56);
+    for (auto p:v)
+{
+    cout<<p;
+}   
+}
+// ==========================(clear funtion )============================
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3,7};
+    
+    v.clear();
+    for (auto p:v)
+{
+    cout<<p;
+}   
+}
+// ====================(empty)==============================
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+     vector<int>v={4,6,8,9,3,7};
+    
+    // v.empty();
+    for (auto p:v)
+{
+    cout<<p;
+} 
+cout<<v.empty();
+}
