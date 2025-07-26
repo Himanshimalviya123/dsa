@@ -769,199 +769,199 @@
 // }
 // Online C++ compiler to run C++ program online
 //==========================VECTOR ERASE(DELETION) VALUE======================================================================================
-#include <iostream>
-using namespace std;
-#include <vector>
-#include <iterator>
-int main()
-{
-    vector<int>v;
-    int n,b;
-    cout<<"how many values enter\n";
-    cin>>n;
-    for(int i=1; i<=n; i++)
-    {
-        cout<<"enter value\n";
-        cin>>b;
-        v.push_back(b);
+// #include <iostream>
+// using namespace std;
+// #include <vector>
+// #include <iterator>
+// int main()
+// {
+//     vector<int>v;
+//     int n,b;
+//     cout<<"how many values enter\n";
+//     cin>>n;
+//     for(int i=1; i<=n; i++)
+//     {
+//         cout<<"enter value\n";
+//         cin>>b;
+//         v.push_back(b);
         
-    }
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
-    cout<<"\nAfter deletion\n";
-    v.pop_back();
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
-    //ERASE the value from begin
-    vector<int>::iterator it=v.begin();
-    v.erase(it+2);
-    v.erase(it);
-    cout<<"\nAfter begin  erase\n";
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
-    vector<int>::iterator itt=v.end();
-    v.erase(itt-1);
-    v.erase(itt-2);
-    cout<<"\nAfter end erase\n";
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
+//     }
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
+//     cout<<"\nAfter deletion\n";
+//     v.pop_back();
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
+//     //ERASE the value from begin
+//     vector<int>::iterator it=v.begin();
+//     v.erase(it+2);
+//     v.erase(it);
+//     cout<<"\nAfter begin  erase\n";
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
+//     vector<int>::iterator itt=v.end();
+//     v.erase(itt-1);
+//     v.erase(itt-2);
+//     cout<<"\nAfter end erase\n";
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
     
-}
-// Online C++ compiler to run C++ program online
-//==========================VECTOR ERASE(DELETION) VALUE======================================================================================
-#include <iostream>
-using namespace std;
-#include <vector>
-#include <iterator>
-#include<algorithm>
-int main()
-{
-    vector<int>v;
-    int n,b;
-    cout<<"how many values enter\n";
-    cin>>n;
-    for(int i=1; i<=n; i++)
-    {
-        cout<<"enter value\n";
-        cin>>b;
-        v.push_back(b);
+// }
+// // Online C++ compiler to run C++ program online
+// //==========================VECTOR ERASE(DELETION) VALUE======================================================================================
+// #include <iostream>
+// using namespace std;
+// #include <vector>
+// #include <iterator>
+// #include<algorithm>
+// int main()
+// {
+//     vector<int>v;
+//     int n,b;
+//     cout<<"how many values enter\n";
+//     cin>>n;
+//     for(int i=1; i<=n; i++)
+//     {
+//         cout<<"enter value\n";
+//         cin>>b;
+//         v.push_back(b);
         
-    }
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
-    cout<<"\nAfter deletion\n";
-    v.pop_back();
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
-    //ERASE the value from begin
-    vector<int>::iterator it=v.begin();
-    v.erase(it+2);
-    v.erase(it);
-    cout<<"\nAfter begin  erase\n";
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
-    cout<<"\nerase value based\n";
-    int x;
-    cout<<"\nenter the value for search\n";
-    cin>>x;
-    auto j=find(v.begin(),v.end(),x);
-    cout<<*j;
-    cout<<"\n";
-    v.erase(j);
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
+//     }
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
+//     cout<<"\nAfter deletion\n";
+//     v.pop_back();
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
+//     //ERASE the value from begin
+//     vector<int>::iterator it=v.begin();
+//     v.erase(it+2);
+//     v.erase(it);
+//     cout<<"\nAfter begin  erase\n";
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
+//     cout<<"\nerase value based\n";
+//     int x;
+//     cout<<"\nenter the value for search\n";
+//     cin>>x;
+//     auto j=find(v.begin(),v.end(),x);
+//     cout<<*j;
+//     cout<<"\n";
+//     v.erase(j);
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
     
-    // vector<int>::iterator itt=v.end();
-    // v.erase(itt-1);
-    // v.erase(itt-2);
-    // cout<<"\nAfter end erase\n";
-    // for(auto p:v)
-    // {
-    //     cout<<p<<"\t";
-    // }
-    //erase()
-}
-// Online C++ compiler to run C++ program online
-//==========================VECTOR  reverse and max min ======================================================================================
-#include <iostream>
-using namespace std;
-#include <vector>
-#include <iterator>
-#include<algorithm>
-int main()
-{
-    vector<int>v;
-    int n,b;
-    cout<<"how many values enter\n";
-    cin>>n;
-    for(int i=1; i<=n; i++)
-    {
-        cout<<"enter value\n";
-        cin>>b;
-        v.push_back(b);
+//     // vector<int>::iterator itt=v.end();
+//     // v.erase(itt-1);
+//     // v.erase(itt-2);
+//     // cout<<"\nAfter end erase\n";
+//     // for(auto p:v)
+//     // {
+//     //     cout<<p<<"\t";
+//     // }
+//     //erase()
+// }
+// // Online C++ compiler to run C++ program online
+// //==========================VECTOR  reverse and max min ======================================================================================
+// #include <iostream>
+// using namespace std;
+// #include <vector>
+// #include <iterator>
+// #include<algorithm>
+// int main()
+// {
+//     vector<int>v;
+//     int n,b;
+//     cout<<"how many values enter\n";
+//     cin>>n;
+//     for(int i=1; i<=n; i++)
+//     {
+//         cout<<"enter value\n";
+//         cin>>b;
+//         v.push_back(b);
         
-    }
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
-    cout<<"\nreverse value\n";
-    reverse(v.begin(),v.end());
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
+//     }
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
+//     cout<<"\nreverse value\n";
+//     reverse(v.begin(),v.end());
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
     
-   cout<<"\nmax value find\n"<<*max_element(v.begin(),v.end());
-   cout<<"\nmin value find\n"<<*min_element(v.begin(),v.end());
+//    cout<<"\nmax value find\n"<<*max_element(v.begin(),v.end());
+//    cout<<"\nmin value find\n"<<*min_element(v.begin(),v.end());
 
-}
-// Online C++ compiler to run C++ program online
-//==========================VECTOR  reverse and max min and empty and clear ======================================================================================
-#include <iostream>
-using namespace std;
-#include <vector>
-#include <iterator>
-#include<algorithm>
-int main()
-{
-    vector<int>v;
-    int n,b;
-    cout<<"how many values enter\n";
-    cin>>n;
-    for(int i=1; i<=n; i++)
-    {
-        cout<<"enter value\n";
-        cin>>b;
-        v.push_back(b);
+// }
+// // Online C++ compiler to run C++ program online
+// //==========================VECTOR  reverse and max min and empty and clear ======================================================================================
+// #include <iostream>
+// using namespace std;
+// #include <vector>
+// #include <iterator>
+// #include<algorithm>
+// int main()
+// {
+//     vector<int>v;
+//     int n,b;
+//     cout<<"how many values enter\n";
+//     cin>>n;
+//     for(int i=1; i<=n; i++)
+//     {
+//         cout<<"enter value\n";
+//         cin>>b;
+//         v.push_back(b);
         
-    }
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
-    cout<<"\nreverse value\n";
-    reverse(v.begin(),v.end());
-    for(auto p:v)
-    {
-        cout<<p<<"\t";
-    }
+//     }
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
+//     cout<<"\nreverse value\n";
+//     reverse(v.begin(),v.end());
+//     for(auto p:v)
+//     {
+//         cout<<p<<"\t";
+//     }
     
-  cout<<"\nmax value find\n"<<*max_element(v.begin(),v.end());
-  cout<<"\nmin value find\n"<<*min_element(v.begin(),v.end());
+//   cout<<"\nmax value find\n"<<*max_element(v.begin(),v.end());
+//   cout<<"\nmin value find\n"<<*min_element(v.begin(),v.end());
    
-   cout<<"\n";
-   if(v.empty())
-   {
-       cout<<"\n vector is empty\n";
-   }
-   else
-   {
-       cout<<"not empty\n";
-   }
-   v.clear();
-   if(v.empty())
-   {
-       cout<<"\nveator is empty";
-   }
+//    cout<<"\n";
+//    if(v.empty())
+//    {
+//        cout<<"\n vector is empty\n";
+//    }
+//    else
+//    {
+//        cout<<"not empty\n";
+//    }
+//    v.clear();
+//    if(v.empty())
+//    {
+//        cout<<"\nveator is empty";
+//    }
    
-}
+// }
 
 // Online C++ compiler to run C++ program online
 //==========================VECTOR (pair) ======================================================================================
